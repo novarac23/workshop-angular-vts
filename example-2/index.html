@@ -1,0 +1,32 @@
+<!-- index.html -->
+<!-- Prmer sa $http i ngRepat -->
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- CSS ===================== -->
+    <!-- load bootstrap -->
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css"> 
+    <style>
+        body    { padding-top:30px; }
+    </style>
+    
+    <!-- JS ===================== -->
+    <!-- load angular -->
+    <script src="http://code.angularjs.org/1.2.6/angular.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.5/angular-route.min.js"></script>
+
+    <script src="app.js"></script>
+</head>
+
+<!-- apply angular app and controller to our body -->
+<body>
+<div class="container" ng-app="myApp">
+    
+    <h1>AngularJS Router Example</h1>
+    <a href="#/home">Home</a><br/>
+    <a href="#/about">About</a><br/>
+
+    <ng-view></ng-view>
+</div><!-- /container -->
+</body>
+</html>
